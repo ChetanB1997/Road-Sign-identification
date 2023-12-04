@@ -26,12 +26,12 @@ pip install -r requirements.txt
 ```bash
 !python train.py --data data.yaml --cfg yolov5s.yaml --batch-size 8 --name Model --epochs 20
 ```
-Arguments:
---data: Specify the path to the data.yaml file.
---cfg: Model checkpoint.
---batch size: Batch size.
---name: Path to the folder used to save training logs/weights.
---epochs: Number of epochs.
++ Arguments:
+  --data: Specify the path to the data.yaml file.
+  --cfg: Model checkpoint.
+  --batch size: Batch size.
+  --name: Path to the folder used to save training logs/weights.
+  --epochs: Number of epochs.
 
 5. Save the ONNX model
 ```bash
