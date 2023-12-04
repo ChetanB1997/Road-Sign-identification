@@ -1,9 +1,10 @@
 # Road-Sign-identification
 
 ## Dataset Preparation
-1. Ensure your dataset is in the standard format with images and corresponding annotations in the `img` and `annotation.txt` format.
-2. If your dataset is not in the standard format, perform data augmentation.
-3. Split and save the dataset into `train` and `test` folders.
+1. Download dataset here https://drive.google.com/file/d/1kE5CocAu1qT0ENl2HOoVk9d7LE17SnuV/view?usp=sharing
+2. Ensure your dataset is in the standard format with images and corresponding annotations in the `img` and `annotation.txt` format.
+3. If your dataset is not in the standard format, perform data augmentation.
+4. Split and save the dataset into `train` and `test` folders.
 
 ## Run the data preprocessing notebook:
 ```shell
@@ -42,6 +43,8 @@ pip install -r requirements.txt
   +  --include: ONNX format.
   +  --simplify: Simplify model to reduce complexity for deployment.
   +  --opset: Version of ONNX to export.
+
+Download saved model: https://drive.google.com/file/d/18h2dT3Z5mXt4ClVDnYBzmo19LhYsVn9N/view?usp=sharing
 
 ## Run yolo_predictions.py and add the path of the saved model.
 ## Result
