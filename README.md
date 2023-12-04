@@ -6,8 +6,8 @@
 3. Split and save the dataset into `train` and `test` folders.
 
 ## Run the data preprocessing notebook:
-'''bash
-jupyter notebook 01_data_preprocessing.ipynb
+'''shell
+  jupyter notebook 01_data_preprocessing.ipynb
 
 ## YOLOv5 Training
 1. Run the object_detection_yolo_training.ipynb notebook for training the YOLOv5 model.
