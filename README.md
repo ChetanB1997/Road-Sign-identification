@@ -27,20 +27,22 @@ pip install -r requirements.txt
 !python train.py --data data.yaml --cfg yolov5s.yaml --batch-size 8 --name Model --epochs 20
 ```
 + Arguments:
-+   --data: Specify the path to the data.yaml file.
+  +  --data: Specify the path to the data.yaml file.
   +  --cfg: Model checkpoint.
   +  --batch size: Batch size.
-  --name: Path to the folder used to save training logs/weights.
-  --epochs: Number of epochs.
+  +  --name: Path to the folder used to save training logs/weights.
+  +  --epochs: Number of epochs.
 
 5. Save the ONNX model
 ```bash
 !python export.py --weights runs/train/Model9/weights/best.pt --include onnx --simplify --opset 12
 ```
-Arguments:
---weights: Path to the weight file.
---include: ONNX format.
---simplify: Simplify model to reduce complexity for deployment.
---opset: Version of ONNX to export.
++ Arguments:
+  +  --weights: Path to the weight file.
+  +  --include: ONNX format.
+  +  --simplify: Simplify model to reduce complexity for deployment.
+  +  --opset: Version of ONNX to export.
 
 ## Run yolo_predictions.py and add the path of the saved model.
+## Result
++ ![Prediction sample](https://github.com/ChetanB1997/Road-Sign-identification/blob/main/image2.jpg)
