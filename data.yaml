@@ -1,0 +1,7 @@
+train: Data/train
+val: Data/test
+nc: 3
+names: ['ADVISORY SPEED MPH',
+         'DIRECTIONAL ARROW AUXILIARY',
+         'DO NOT ENTER'
+]
